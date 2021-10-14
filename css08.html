@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <title>CSS 08</title> 
+       <style>
+           h1{
+               color: forestgreen;
+               font-size: 45px;
+           }
+           ul{
+               background-color: rgb(69, 161, 204);
+           }
+           li{
+                padding: 10px;
+                display:inline-block;
+           }
+           li:nth-last-child(1){
+               float:right;
+           }
+           li>a{
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+            }
+            #trangchu{
+                font-weight: bold;
+                color: yellow;
+                text-shadow: 5px 5px 2px black;
+                font-size: 25px;
+            }
+            p{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            p>a{
+                padding: 0 5px 0 5px;
+                color:lime;
+                font-size: 25px;
+            }
+            button{
+                border-radius: 5px;
+                width: 70px;
+                height: 30px;
+                background-color:cornflowerblue;
+                color:white;
+                font-weight: bold;
+                border: none;
+            }
+            button:hover{
+                background-color:darkcyan;
+                color: cornflowerblue;
+            }
+            li>a:hover{
+                color:darkcyan;
+                background-color: darkgoldenrod;
+            }
+       </style>
+    </head>
+    <body>
+        <h1>Diễn đàn học lập trình</h1>
+        <ul class="menu">
+            <li><a href="http://cunghoclaptrinh.com/" id="trangchu">cunghoclaptrinh.com</a></li>
+            <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+            <li><a href="https://www.w3schools.com/js/default.asp">JavaScript</a></li>
+            <li><a href="https://profile.w3schools.com/">Login</a></li>
+        </ul>
+        <p>Vui lòng click nút<a>Đăng ký</a>để tham gia khóa học</p>
+        <button>Đăng ký</button><br><br>
+    </body>
+</html>

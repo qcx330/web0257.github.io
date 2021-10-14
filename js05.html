@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 05</title>
+    <script>
+        function xoay()
+        {
+            var str1=document.getElementById("p1").innerText;
+            str1= str1.substr(str1.length-1)+str1.substr(0,str1.length-1);
+            document.getElementById("p1").innerText=str1;
+            str2=document.getElementById("p2").innerText;
+            str2= str2.substr(1)+str1.substr(0,1);
+            document.getElementById("p2").innerText=str2;
+        }
+        setInterval(xoay, 100);
+    </script>
+    <style>
+        .left, .right {
+            border: blue 1px solid;
+            margin: 10px;
+            padding: 5px;
+            width:250px;
+            font-size:25px;
+        }
+    </style>
+</head>
+<body>
+    <p class="right" id="p1">HTML-JAVASCRIPT</p><br>
+    <p class="left" id="p2">HTML-JAVASCRIPT</p>
+</body>
+</html>

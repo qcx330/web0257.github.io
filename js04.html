@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 04</title>
+    <script src="JS/js04.js"></script>
+    <style>
+        table{
+            width: 500px;
+        }
+        table,td{
+            border: 1px solid black;
+        }
+        #caption{
+            text-align: center;
+            font-weight: bold;
+            padding: 5px 0px 30px 0px;
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="" name="form" onsubmit="return solve()">
+    <table>
+        <td colspan="2" id="caption">CÁC PHÉP TÍNH SỐ HỌC </td>
+        <tr>
+            <td>Số thứ 1</td>
+            <td>
+                <input type="number" id="num1">
+            </td>
+        </tr>
+        <tr>
+            <td>Số thứ 2</td>
+            <td>
+                <input type="number" id="num2">
+            </td>
+        </tr>
+        <tr>
+            <td>Chọn phép toán</td>
+            <td>
+                <input type="radio" name="calc" value="+" checked> Cộng <br>
+                <input type="radio" name="calc" value="-">Trừ <br>
+                <input type="radio" name="calc" value="*"> Nhân <br>
+                <input type="radio" name="calc" value="/">Chia
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit">Thực hiện</button>
+            </td>
+            <td>
+                <input type="text" id="show" name="show">
+            </td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS 06</title>
+        <style>
+            .p1,.p2,.p3{
+                background-color: yellow;
+                width: 200px;
+                height: 100px;
+                border: 3px solid black;
+                padding: 5px;
+
+            }
+            .p1{
+                height: 100px;
+                overflow:visible;
+            }
+            .p2{
+                display: inline-block;
+                line-height: 20px;
+                overflow: hidden;
+                margin: 45px 0 0 0;
+            }
+            .p3{
+                display: inline-block;
+                overflow: scroll;
+                margin: 0 0 0 50px;
+            }   
+        </style>
+    </head>
+    <body>
+        <div class="p1">Văn bản trong phần tử div 1 sử dụng các thuộc tính mặc định, phần văn bản thừa sẽ tràn ra ngoài. Văn bản trong phần tử div 1 sử dụng các thuộc tính mặc định, phần văn bản thừa sẽ tràn ra ngoài.</div>
+        <div class="p2">Văn bản trong phần tử div 2 có thuộc tính line-height:20px, overflow:hidden; không có thanh cuộn, phần văn bản thừa sẽ bị ẩn. Văn bản trong phần tử div 2 sử dụng các thuộc tính line-height:20px, overflow:hidden; không có thanh cuộn, phần văn bản thừa sẽ bị ẩn.</div>
+        <div class="p3">Văn bản trong phần tử div 3 có thuộc tính overflow:scroll; có thanh cuộn. Văn bản có trong phần tử div 3 có thuộc tính overflow:scroll; có thanh cuộn.</div><br>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 02</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Tên: ");
+        var year = prompt("Năm sinh: ");
+        var now = new Date();
+        var age = now.getFullYear() - year;
+        if (age < 0 || age >now.getFullYear())
+            alert('Năm sinh không hợp lệ');
+        else
+            document.write("Chào bạn: "+name +"<br>Tuổi của bạn là: "+age);
+    </script>
+    </body>
+</html>

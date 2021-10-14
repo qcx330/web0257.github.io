@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 09</title>
+    <style>
+        *{
+            font-family: arial;
+        }
+        .head{
+            background-image: url(/Images/troituyet.jpg);
+            color:yellow;
+            padding: 70px;
+            font-weight: bold;
+            text-align: center;
+            font-size:20px;
+        }
+        .head-link ul{
+            background-color: blue;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .head-link li{
+            font-weight: bold;
+            color: white;
+            display: inline-block;
+            padding: 10px;
+        }
+        #body{
+            display: flex;
+            width:100%;
+            height:600px;
+            margin-top:10px;
+        }
+        .left, .right
+        {
+            width:70%;
+            height: 100%;
+            background-color: green;
+            font-weight: bold;
+        }
+        .left li{
+            color:white;
+            list-style-type:disc;
+            list-style-position: inside;
+            line-height: 40px;
+        }
+        .content
+        {
+            width: 75,5%;
+            height: 99%;
+            background-color: white;
+            border: 2px solid gainsboro;
+            margin-right: 10px;
+        }
+        #ads1,#ads2{
+            border-radius:25px;
+            background-color: wheat;
+            padding: 60px;
+            margin: 20px;
+        }
+        #p1, #p2, #p3, #p4{
+            background-color:lightgray;
+            width: 250px;
+            height:250px;
+        }
+        #p4{
+            overflow: scroll;
+        }
+        #row1{
+            display: flex;
+        }
+        #row2{
+            display: flex;
+        }   
+        #row1>p
+        {
+            width:50%;
+            height:200;
+            padding: 10px;
+            margin:10px;
+        }
+        #row2>p
+        {
+            width: 50%;
+            height: 200;
+            padding: 10px;
+            margin:10px;
+        }
+        .footer{
+            background-color: blue;
+            padding:10px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">DIỄN ĐÀN CÔNG NGHỆ THÔNG TIN</div>
+    <div class="head-link">
+        <ul>
+            <li>Trang chủ</li>
+            <li>Giới thiệu</li>
+            <li>Liên hệ</li>
+        </ul>
+    </div>
+    <div id="body">
+        <div class="left">
+        <ul>
+            <li>C#</li>
+            <li>PHP & MySQL</li>
+            <li>XML</li>
+            <li>Java</li>
+            <li>SQl Server</li>
+            <li>ASP.NET</li>
+            <li>Android</li>
+            <li>Windows Phone</li>
+        </ul>
+        </div>
+        <div class="content">
+            <div id="row1">
+                <p id="p1">Cách sử dụng tính năng này cũng khá đơn giản, bạn vào hộp thư chính (Primary) , mở xem thư có nội dung quảng cáo, spam. Trêm hộp thoại hiện ra, bạn nhấn biểu tượng ba dấu chấm kế bên phải địa chỉ người gửi chọn Block.... Về sau, những thư rác được gửi từ email này sẽ được Gmail chuyển hết vào thư mục Spam. Hoàn toàn tương tự, bạn có thể thực hiện chặn những địa chỉ email chuyên gửi thư spam khác</p>
+                <p id="p2">Lưu ý: Nếu muốn bỏ chặn email bất kỳ, bạn thực hiện như khi chặn nhưng chọn Unblock thay cho lệnh Block. Ngoài ra, nếu trước đây bạn có đăng ký nhận thông tin từ trang web hay dịch vụ nào đó và liên tục bị spam thư. Hãy thực hiện huỷ đăng ký nhận tin bằng cách mở email gửi từ trang web dịch vụ rồi tìm và nhắn liên kết Unsubscribe (thường nằm ở cuối thư) hoặc bấm phím menu > chọn Unsubscribe.</p>
+            </div>
+            <div id="row2">
+                <p id="p3">Trình duyệt Adblock Browser tích hợp sẵn thành phần Adblock Plus có khả năng chặn mọi loại quảng cáo, mã độc trên web, giúp tiết kiệm lưu lượng mạng khi dùng 3G đồng thời tải trang nhanh hơn. Adblock Browser được phát triển dựa trên nền tảng FireFox nên giao diện và cách sử dụng trình duyệt này hoàn toàn tương tự FireFox. Chế độ chặn quảng cáo được bật mặc định nên bạn không cần phải cấu hình gì thêm.</p>
+                <p id="p4">Để tuỳ chỉnh các thiết lập chặn quảng cáo, bạn vào Setting (nhấn phím Menu) > chọn Ad blocking. Trên hộp thoại xuất hiện, bạn truy cập mục More blocking options sẽ thấy có các tuỳ chọn: Disable tracking (ngăn chặn hành vi theo dõi người dùng nhằm mục đích quảng cáo), Disable malware domains (chặn tên miền chứa mã độc), Disable social media buttons (vô hiệu các nút chia sẻ, auto like nhúng trên web), Disable ....</p>
+            </div>
+        </div>
+        <div class="right">
+            <div id="ads1">Vùng quảng cáo 1</div>
+            <div id="ads2">Vùng quảng cáo 2</div>
+        </div>
+</div>
+    <div class="footer">copyright 2018</div>
+</body>
+</html>

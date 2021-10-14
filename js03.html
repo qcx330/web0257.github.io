@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 03</title>
+    <script script src="JS/js03.js"></script>
+    <style>
+        table
+        {
+            background-color:rgb(247, 245, 179);
+            border: 2px solid black;
+            width: 450px;
+        }
+        caption{
+            font-weight: bold;
+        }
+        td
+        {
+            border: 1px solid black;
+            margin: 0px;
+            height: 25px;
+            padding: 5px;
+        }
+        td.left
+        {
+            width: 70px;
+        }
+        #show{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            CHƯƠNG TRÌNH GIẢI PHƯƠNG TRÌNH BẬC 2<br>
+            ax<sup>2</sup> + bx + c = 0
+        </caption>
+        <tr>
+            <td class="left">a =</td>
+            <td><input type="number" name="a" id="a" class="right"></td>
+        </tr>
+        <tr>
+            <td class="left">b =</td>
+            <td><input type="number" name="b" id="b" class="right"></td>
+        </tr>
+        <tr>
+            <td class="left">c =</td>
+            <td><input type="number" name="c" id="c" class="right"></td>
+        </tr>
+        <tr>
+            <td class="left" class="right"></td>
+            <td >
+                <input type="button" id="solve" name="Giải" value="Giải" onclick=solve()>
+                <input type="button" id="delete" name="Xóa" value="Xóa" onclick=del()>
+            </td>
+        </tr>
+    </table>
+    <p id="show"></p>
+    </body>
+</html>

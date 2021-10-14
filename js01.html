@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 01</title>
+    <script src="/JS/js01.js"></script>
+    <style>
+        th, td{
+            font-weight: normal;
+            text-align: left;
+            border: solid 1px black;
+            padding: 2px 5px 2px 1px;
+        }
+        table{
+            border: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>CHƯƠNG TRÌNH TÍNH TUỔI</h1>
+    <table>
+        <tr>
+            <th>Nhập vào tên của bạn: </th>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <th>Nhập vào năm sinh của bạn: </th>
+            <td><input type="number" id="bornYear"></td>
+        </tr>
+    </table>
+    <br>
+    <button type="button" onclick="calculateAge()">Tính tuổi</button>
+    <p id="show"></p>
+    <br>
+</body>
+</html>

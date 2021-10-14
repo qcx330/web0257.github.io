@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Bài tập 12</title>
+</head>
+<body>
+    <form action="">
+        <table border="1" bgcolor="#00FFFF" width="40%">
+            <caption><h2>THÔNG TIN ĐĂNG KÝ</h2></caption>
+            <tr>
+                <td>Họ tên:</td>
+                <td>
+                    <form>
+                        <input type="text" 
+                            name="ten" 
+                            placeholder="Nhập họ tên ở đây!">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" 
+                        value="Nam" 
+                        name="gioitinh" 
+                        id="Nam">
+                    <label for="Nam">Nam</label>
+                    <input type="radio" 
+                        value="Nu" 
+                        name="gioitinh" 
+                        id="Nu">
+                    <label for="Nu">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td>
+                    <input type="date"
+                        name="ngaysinh"
+                        max="2021-12-31">
+                </td>
+            </tr>
+            <tr>
+                <td>Điều bạn quan tâm</td>
+                <td>
+                    <input type="checkbox" 
+                        value="kinhte" 
+                        name="quantam[]" 
+                        id="kinhte">
+                    <label for="kinhte">Kinh tế</label>
+                    <input type="checkbox" 
+                        value="xahoi" 
+                        name="Quantam[]" 
+                        id="xahoi">
+                    <label for="xahoi">Xã hội</label>
+                    <input type="checkbox" 
+                        value="giaitri" 
+                        name="Quantam[]" 
+                        id="giaitri">
+                    <label for="giaitri">Giải trí</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ:</td>
+                <td>
+                    <textarea name="diachi" 
+                        id="diachi" 
+                        cols="70" 
+                        rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Học vấn:</td>
+                <td>
+                    <input list="Danhsach" 
+                        name="Danhsach" 
+                        id="list">
+                    <datalist id="Danhsach">
+                        <option value="Cao đẳng">
+                        <option value="Trung cấp">
+                        <option value="Trung học">
+                        <option value="Tiểu học">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" 
+                        value="Gửi thông tin">
+                    <input type="reset" 
+                        value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
